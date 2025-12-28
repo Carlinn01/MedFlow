@@ -137,7 +137,7 @@ A interface será simples, limpa e intuitiva, priorizando a usabilidade do siste
 
 ## 🚀 Considerações Finais
 
-Este projeto representa uma **solução completa e escalável** para a gestão de clínicas, podendo ser expandido futuramente com funcionalidades como:
+Este projeto é estudantil e representa uma **solução completa e escalável** para a gestão de clínicas, podendo ser expandido futuramente com funcionalidades como:
 - Agendamento online para pacientes
 - Integração com sistemas de pagamento
 - Notificações automáticas (e-mail e WhatsApp)
