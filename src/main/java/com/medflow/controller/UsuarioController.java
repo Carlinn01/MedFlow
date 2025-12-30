@@ -1,15 +1,23 @@
 package com.medflow.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.medflow.model.Usuario;
+import com.medflow.service.UsuarioService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/usuarios")
 public class UsuarioController {
 
+    private final UsuarioService usuarioService;
+
+    public UsuarioController(UsuarioService usuarioService) {
+        this.usuarioService = usuarioService;
+    }
+
     @GetMapping
-    public String listar() {
-        return "API MedFlow rodando 🚀";
+    public List<Usuario> listar() {
+        return usuarioService.listarTodos();
     }
 }
