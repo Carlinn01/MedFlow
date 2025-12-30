@@ -20,4 +20,9 @@ public class UsuarioController {
     public List<Usuario> listar() {
         return usuarioService.listarTodos();
     }
+
+    @PostMapping
+    public Usuario criar(@RequestBody Usuario usuario) {
+        return usuarioService.salvar(usuario);
+    }
 }
